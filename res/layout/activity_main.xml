@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/connectstatus"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/status"
+            />
+
+        <TextView
+
+            android:id="@+id/terminalView"
+            style="@style/textviewStyle"
+            android:layout_width="78dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="@string/terminal" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+            <ydd.son01.SshTools.SshEditText
+                android:id="@+id/command"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginBottom="10dp"
+                android:textSize="50dp"
+                android:background="@color/thingray"
+                android:gravity="top|left"
+                android:imeOptions="actionGo"
+                android:inputType="textMultiLine"
+                android:minLines="10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/enterbutton"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/baseline_loop_24"
+                    android:text="@string/connect_btn" />
+
+                <Button
+                    android:id="@+id/sftpbutton"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/enterbutton"
+                    android:drawableLeft="@drawable/baseline_drive_file_move_24"
+                    android:text="@string/filetransfer" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/endsessionbutton"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:drawableLeft="@drawable/baseline_close_24"
+                android:text="@string/end"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

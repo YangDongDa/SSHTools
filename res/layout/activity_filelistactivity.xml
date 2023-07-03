@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/upbutton"
+            style="@style/buttonStyle"
+            android:drawableLeft="@drawable/baseline_drive_file_move_rtl_24"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/up"
+
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/connectbutton"-->
+<!--            style="@style/buttonStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_toRightOf="@+id/upbutton"-->
+<!--            android:text="connect"/>-->
+
+        <TextView
+            android:id="@+id/statetextview"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="connected" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/almostblack"
+            android:layout_weight="3">
+
+
+            <GridView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/thingray"
+                android:columnWidth="200dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@color/gray"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/centertext"
+                style="@style/editTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="255dp"
+                android:text="remote files" />
+            <ProgressBar
+                android:id="@+id/mprogress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/almostblack"
+            android:layout_weight="3">
+
+            <GridView
+                android:id="@+id/remotelistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/thingray"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:columnWidth="200dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

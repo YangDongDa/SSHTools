@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/thingray"
+        app:title="@string/tv_two"
+        app:titleTextColor="@color/black"
+        app:titleMarginStart="20dp"
+        app:logo="@drawable/baseline_loop_24"/>
+
+
+
+    <ydd.son01.SshTools.SshEditText
+        android:id="@+id/host"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:hint="@string/hostname"
+        android:textColor="@color/black"
+        android:inputType="text"
+        style="@style/editTextStyle"
+
+        android:drawableLeft="@drawable/baseline_dns_24"
+        android:drawablePadding="10dp"
+        />
+
+    <ydd.son01.SshTools.SshEditText
+        android:id="@+id/username"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:hint="@string/username"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        />
+
+
+    <ydd.son01.SshTools.SshEditText
+        android:id="@+id/password"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height= "80sp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        />
+
+    <ydd.son01.SshTools.SshEditText
+        android:id="@+id/port"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        style="@style/editTextStyle"
+        android:hint="Port"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_dns_24"
+        android:drawablePadding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/connectBtn"
+        style="@style/buttonStyle"
+        android:layout_width="246dp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
+        android:clickable="true"
+        android:text="Connect"
+
+        android:textColor="@color/black">
+
+    </Button>
+
+
+</LinearLayout>
+</RelativeLayout>

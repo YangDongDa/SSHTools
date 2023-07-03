@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="green">#FF00FF00</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="gray">#E4E4E4</color>
+    <color name="thingray">#BDB8B8</color>
+    <color name="purple">#FF800080</color>
+    <color name="orange">#FFFFBB33</color>
+
+    <item name="lightblue" type="color">#FF7AE5FF</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="cybergreen" type="color">#FF66FA45</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="almostblack" type="color">#FF302533</item>
+    <item name="eggshell" type="color">#FFEEEAEE</item>
+</resources>

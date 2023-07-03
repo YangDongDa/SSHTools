@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SshTools</string>
+    <string name="tv_one">ssh连接工具 ssh连接工具 ssh连接工具 ssh连接工具 ssh连接工具 ssh连接工具</string>
+    <string name="tv_two">ssh连接工具</string>
+    <string name="menu_settings">Settings</string>
+    <string name="input_information">Input Information</string>
+    <string name="username">Username</string>
+    <string name="hostname">Hostname</string>
+    <string name="password">Password</string>
+    <string name="connect_btn">连接</string>
+    <string name="status">Connect Status:</string>
+    <string name="disconnect_btn">Disconnect</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="command">Enter command</string>
+    <string name="runcommand">Run</string>
+    <string name="taskfail">Unable to complete command.</string>
+    <string name="progress_runningcommand">Running command</string>
+    <string name="progress_pleasewait">Please wait</string>
+    <string name="filetransfer">Sftp文件传输</string>
+    <string name="up">上级目录</string>
+    <string name="retrieve_remote_files">Retrieving remote file list</string>
+    <string name="insertallvalues">Please fill in username, hostname and password values.</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="terminal">Terminal</string>
+    <string name="end">取消连接</string>
+
+</resources>
